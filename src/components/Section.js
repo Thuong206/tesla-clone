@@ -39,7 +39,7 @@ function Section({ bgr,
 export default Section
 
 const Wrap = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -49,7 +49,7 @@ const Wrap = styled.div`
     flex-direction: column;
     align-items: center;
     background-image: ${props => `url("/image/${props.bgr}")`};
-    ::-ưe
+    scroll-snap-align: start;
 `
 const ItemText = styled.div`
     padding-top: 15vh;

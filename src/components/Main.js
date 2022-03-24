@@ -60,5 +60,7 @@ function Main() {
 
 export default Main
 const Container = styled.div`
-height: 100vh
+height: 100vh;
+overflow-y: auto;
+scroll-snap-type: y mandatory;
 `

@@ -70,7 +70,7 @@ const Container = styled.div`
     left: 0;
     right: 0;
     justify-content: space-between;
-    backdrop-filter: blur(10px)
+    backdrop-filter: blur(1px);
 
 `
 const Logo = styled.img`
@@ -161,6 +161,28 @@ const MenuMore = styled.div`
         border-bottom: 1px solid;
         padding: 20px 0px 0;
         font-weight: 600;
+        position: relative;
+        cursor: pointer;
+
+        &:before{
+            position: absolute;
+            content: '';
+            width: 0%;
+            height: 2px;
+            background-color: red;
+            bottom: -1px;
+            right: 0;
+            transition: 0.5s;
+        }
+
+        :hover{
+            font-style: italic;
+            border-bottom: unset;
+            
+            &:before{
+                width: 100%;
+            }
+        }
     }
 `
 const A = styled.div`
